@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <title>滑動拼圖</title>
+    <script src="puzzle.js"></script>
+    <style type="text/css">
+        .operate{
+            width: 240px;
+            height: 30px;
+            margin: 50px auto;
+        }
+        .operate select{
+            width: 80px;
+            height: 30px;
+        }
+        button{
+            height: 30px;
+            background-color: cadetblue;
+        }
+        button:hover{border: 1px; background-color: darkseagreen;}
+        #imgs{
+/*            width: 240px;
+            height: 240px;  */
+            margin: auto;
+            border: 5px solid #baabab;
+            display: none;
+        }
+        #imgs div{
+            width: 78px;
+            height: 78px;
+            margin: 1px;
+            border: 1px ;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 70px;
+            float: left;
+        }
+        #imgs div img{
+            width: 78px;
+            height: 78px;
+        }
+    </style>
+</head>
+<body>
+   <div>
+       <div id="operate" class="operate">
+           <select>
+               <option value="3">簡單</option>
+               <option value="4">困難</option>
+           </select>
+           <button>START!</button>
+           步數: <span>0</span>
+       </div>
+       <div id="imgs">
+       </div>
+   </div>
+    
+</body>
+</html>
