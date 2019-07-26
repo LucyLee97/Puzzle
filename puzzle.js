@@ -13,9 +13,9 @@
     
     function load(level){
         if(level==3){
-            imgs.innerHTML=(data+"").replace(/(\d+)\D*/g,'<div><img src="3/$1.jpg"/> </div>');
+            imgs.innerHTML=(data+"").replace(/(\d+)\D*/g,'<div><img src="img/3/$1.jpg"/> </div>');
         }else{
-            imgs.innerHTML=(data+"").replace(/(\d+)\D*/g,'<div><img src="4/$1.jpg"/> </div>');
+            imgs.innerHTML=(data+"").replace(/(\d+)\D*/g,'<div><img src="img/4/$1.jpg"/> </div>');
         }
         imgs.children[data.indexOf(Math.pow(level,2))].innerHTML="";
     }
